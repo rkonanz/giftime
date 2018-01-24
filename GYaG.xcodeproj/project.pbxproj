@@ -14,6 +14,8 @@
 		8A42519A2005B490003A69AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4251982005B490003A69AB /* LaunchScreen.storyboard */; };
 		8A4251A52005B490003A69AB /* GYaGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251A42005B490003A69AB /* GYaGTests.swift */; };
 		8A4251B02005B490003A69AB /* GYaGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251AF2005B490003A69AB /* GYaGUITests.swift */; };
+		8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */; };
+		8AF99FB4200A9EFF002CE3B0 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8A4251AB2005B490003A69AB /* GYaGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYaGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4251AF2005B490003A69AB /* GYaGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYaGUITests.swift; sourceTree = "<group>"; };
 		8A4251B12005B490003A69AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				8A42518F2005B490003A69AB /* AppDelegate.swift */,
 				8A4251912005B490003A69AB /* ViewController.swift */,
 				8A4251932005B490003A69AB /* Main.storyboard */,
+				8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */,
+				8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */,
 				8A4251962005B490003A69AB /* Assets.xcassets */,
 				8A4251982005B490003A69AB /* LaunchScreen.storyboard */,
 				8A42519B2005B490003A69AB /* Info.plist */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF99FB4200A9EFF002CE3B0 /* HomepageViewController.swift in Sources */,
+				8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */,
 				8A4251922005B490003A69AB /* ViewController.swift in Sources */,
 				8A4251902005B490003A69AB /* AppDelegate.swift in Sources */,
 			);
