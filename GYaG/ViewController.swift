@@ -25,8 +25,14 @@ class ViewController: UIViewController {
     
     @IBAction func logIn(_ sender: Any) {
         
+        // checks if email or password are empty
+        if email.text! == "" || password.text! == "" {
+            self.displayAlertMessage(title: "Error", message: "No Blank Fields Allowed!")
+            return
+        }
+        
         // selects PHP script and starts the request
-        let url = URL(string: "http://www.wegotyouagift.com/loginUser.php")!
+        let url = URL(string: "http://www.wegotyouagift.com/validation/loginUser.php")!
         var request = URLRequest(url: url)
         
         // makes the request a POST method

@@ -15,7 +15,7 @@ class HomepageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "http://www.wegotyouagift.com/homepage.php")!
+        let url = URL(string: "http://www.wegotyouagift.com/validation/homepage.php")!
         let request = URLRequest(url: url)
         
         // modify the request as necessary, if necessary
@@ -26,15 +26,23 @@ class HomepageViewController: UIViewController {
                 return
             }
             
+            var firstName = ""
+            
             do {
                 if let json = try JSONSerialization.jsonObject(with: data) as? [String: String], let fname = json["fname"]{
-                    print("fname = \(fname)")   // if everything is good, you'll see "William"
+                    print("fname = \(fname)")
+                    firstName = fname
                 }
             } catch let parseError {
                 print("parsing error: \(parseError)")
                 let responseString = String(data: data, encoding: .utf8)
                 print("raw response: \(responseString)")
             }
+            
+            DispatchQueue.main.async {
+                self.homeTitle.text = ("Welcome, " + firstName as String?)! + "!"
+            }
+            
         }
         task.resume()
         
@@ -44,5 +52,23 @@ class HomepageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func logOut(_ sender: Any) {
+        
+        let url = URL(string: "http://www.wegotyouagift.com/validation/logOut.php")!
+        let request = URLRequest(url: url)
+        
+        // modify the request as necessary, if necessary
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {
+                print("request failed \(error)")
+                return
+            }
+        }
+        task.resume()
+        
+    }
+    
     
 }

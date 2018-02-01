@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func register(_ sender: Any) {
         
-        let request = NSMutableURLRequest(url: NSURL(string: "http://www.wegotyouagift.com/registerUser.php")! as URL)
+        let request = NSMutableURLRequest(url: NSURL(string: "http://www.wegotyouagift.com/validation/registerUser.php")! as URL)
         request.httpMethod = "POST"
         //need to add the other two variables in here and in php to register user successfully
         let postString = "a=\(email.text!)&b=\(password.text!)&c=\(firstName.text!)&d=\(lastName.text!)"
