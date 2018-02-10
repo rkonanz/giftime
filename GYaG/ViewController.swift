@@ -8,6 +8,7 @@
 
 import UIKit
 import FacebookLogin
+import FacebookCore
 
 class ViewController: UIViewController {
     
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
     
         let loginManager = LoginManager()
         
-        loginManager.logIn([.publicProfile], viewController: self){
+        loginManager.logIn([.publicProfile, .email], viewController: self){
             result in
             
             switch result {
@@ -40,11 +41,30 @@ class ViewController: UIViewController {
                 print(error.localizedDescription)
             case .cancelled:
                 print("cancelled")
-            case .success(let grantedPermissions, _, let userInfo):
-                self.accessTokenLabel.text = userInfo.authenticationToken
-                self.permissionsLabel.text = grantedPermissions.map { "\($0)" }.joined(separator: " ")
+            case .success(_,_,_):
+                self.getUserInfo { userInfo, error in
+                    if let error = error { print(error.localizedDescription) }
+                    
+                    if let userInfo = userInfo, let id = userInfo["id"], let name = userInfo["name"], let email = userInfo["email"] {
+                        self.permissionsLabel.text = "name: \(name)"
+                        self.accessTokenLabel.text = "email: \(email)"
+                    }
+                }
             }
-            
+        }
+        
+    }
+    
+    func getUserInfo(completion: @escaping (_ : [String: Any]?, _ : Error?) -> Void){
+        
+        let request = GraphRequest(graphPath: "me", parameters: ["fields": "id,name,email,picture"])
+        request.start { response, result in
+            switch result {
+            case .failed(let error):
+                completion(nil, error)
+            case .success(let graphResponse):
+                completion(graphResponse.dictionaryValue, nil)
+            }
         }
         
     }
