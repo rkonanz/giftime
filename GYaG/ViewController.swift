@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import FacebookLogin
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var permissionsLabel: UILabel!
+    @IBOutlet weak var accessTokenLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +27,28 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func fbLogin(_ sender: Any) {
+    
+        let loginManager = LoginManager()
+        
+        loginManager.logIn([.publicProfile], viewController: self){
+            result in
+            
+            switch result {
+            case .failed(let error):
+                print(error.localizedDescription)
+            case .cancelled:
+                print("cancelled")
+            case .success(let grantedPermissions, _, let userInfo):
+                self.accessTokenLabel.text = userInfo.authenticationToken
+                self.permissionsLabel.text = grantedPermissions.map { "\($0)" }.joined(separator: " ")
+            }
+            
+        }
+        
+    }
+    
     
     @IBAction func logIn(_ sender: Any) {
         

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21B72700C42D9D29252C96E5 /* Pods_GYaG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945142A03FEA82FEDA0C9A9C /* Pods_GYaG.framework */; };
+		83029EB9E6B50003A15759BA /* Pods_GYaGUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25EDBC1679F76AF8897618B /* Pods_GYaGUITests.framework */; };
+		8A04645E202F95000000F975 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A04645F202F95000000F975 /* FacebookCore.framework */; };
+		8A046460202F95050000F975 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A046461202F95050000F975 /* Bolts.framework */; };
+		8A046462202F95110000F975 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A046463202F95110000F975 /* FacebookLogin.framework */; };
 		8A4251902005B490003A69AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42518F2005B490003A69AB /* AppDelegate.swift */; };
 		8A4251922005B490003A69AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251912005B490003A69AB /* ViewController.swift */; };
 		8A4251952005B490003A69AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4251932005B490003A69AB /* Main.storyboard */; };
@@ -16,6 +21,7 @@
 		8A4251B02005B490003A69AB /* GYaGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251AF2005B490003A69AB /* GYaGUITests.swift */; };
 		8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */; };
 		8AF99FB4200A9EFF002CE3B0 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */; };
+		EDB0CE1C73369250BDCDB616 /* Pods_GYaGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC87E3182B72E852CF53AFC8 /* Pods_GYaGTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DA3A0C8836ACA31C7451DE2 /* Pods-GYaGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYaGTests/Pods-GYaGTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6781C07FE0987EE6693BD063 /* Pods-GYaGUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaGUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYaGUITests/Pods-GYaGUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6854A33C5B087B134CE9F0B1 /* Pods-GYaGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYaGTests/Pods-GYaGTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A04645F202F95000000F975 /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A046461202F95050000F975 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A046463202F95110000F975 /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A046465202F951A0000F975 /* FacebookShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A42518C2005B490003A69AB /* GYaG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYaG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A42518F2005B490003A69AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4251912005B490003A69AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +64,12 @@
 		8A4251B12005B490003A69AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		8CB87525AA9D28DDD8C17A6B /* Pods-GYaGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYaGUITests/Pods-GYaGUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F16CD73F6A57F575102593A /* Pods-GYaG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaG.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYaG/Pods-GYaG.release.xcconfig"; sourceTree = "<group>"; };
+		945142A03FEA82FEDA0C9A9C /* Pods_GYaG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYaG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25EDBC1679F76AF8897618B /* Pods_GYaGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYaGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA5FB349E25A222255E37D8 /* Pods-GYaG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYaG/Pods-GYaG.debug.xcconfig"; sourceTree = "<group>"; };
+		DC87E3182B72E852CF53AFC8 /* Pods_GYaGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYaGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A046462202F95110000F975 /* FacebookLogin.framework in Frameworks */,
+				8A046460202F95050000F975 /* Bolts.framework in Frameworks */,
+				8A04645E202F95000000F975 /* FacebookCore.framework in Frameworks */,
+				21B72700C42D9D29252C96E5 /* Pods_GYaG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB0CE1C73369250BDCDB616 /* Pods_GYaGTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83029EB9E6B50003A15759BA /* Pods_GYaGUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3808228E771FF4B45498EB5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFA5FB349E25A222255E37D8 /* Pods-GYaG.debug.xcconfig */,
+				8F16CD73F6A57F575102593A /* Pods-GYaG.release.xcconfig */,
+				5DA3A0C8836ACA31C7451DE2 /* Pods-GYaGTests.debug.xcconfig */,
+				6854A33C5B087B134CE9F0B1 /* Pods-GYaGTests.release.xcconfig */,
+				6781C07FE0987EE6693BD063 /* Pods-GYaGUITests.debug.xcconfig */,
+				8CB87525AA9D28DDD8C17A6B /* Pods-GYaGUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8A4251832005B490003A69AB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				8A4251A32005B490003A69AB /* GYaGTests */,
 				8A4251AE2005B490003A69AB /* GYaGUITests */,
 				8A42518D2005B490003A69AB /* Products */,
+				3808228E771FF4B45498EB5D /* Pods */,
+				EEA636B8C083035ACCD0490C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +171,20 @@
 			path = GYaGUITests;
 			sourceTree = "<group>";
 		};
+		EEA636B8C083035ACCD0490C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A046465202F951A0000F975 /* FacebookShare.framework */,
+				8A046463202F95110000F975 /* FacebookLogin.framework */,
+				8A046461202F95050000F975 /* Bolts.framework */,
+				8A04645F202F95000000F975 /* FacebookCore.framework */,
+				945142A03FEA82FEDA0C9A9C /* Pods_GYaG.framework */,
+				DC87E3182B72E852CF53AFC8 /* Pods_GYaGTests.framework */,
+				A25EDBC1679F76AF8897618B /* Pods_GYaGUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4251B42005B490003A69AB /* Build configuration list for PBXNativeTarget "GYaG" */;
 			buildPhases = (
+				8AC4511DC6BFACBD005183FF /* [CP] Check Pods Manifest.lock */,
 				8A4251882005B490003A69AB /* Sources */,
 				8A4251892005B490003A69AB /* Frameworks */,
 				8A42518A2005B490003A69AB /* Resources */,
+				7D09AB81826AF7C4C3EBBC7F /* [CP] Embed Pods Frameworks */,
+				10C30397016F850900A6C51D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4251B72005B490003A69AB /* Build configuration list for PBXNativeTarget "GYaGTests" */;
 			buildPhases = (
+				3C3D5A5A559A9048AA73A485 /* [CP] Check Pods Manifest.lock */,
 				8A42519C2005B490003A69AB /* Sources */,
 				8A42519D2005B490003A69AB /* Frameworks */,
 				8A42519E2005B490003A69AB /* Resources */,
+				7D43F610A219B613E804C292 /* [CP] Embed Pods Frameworks */,
+				3F2E3C554429CEF1A0F6999A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4251BA2005B490003A69AB /* Build configuration list for PBXNativeTarget "GYaGUITests" */;
 			buildPhases = (
+				2D3F1A69191832FB0AE05A99 /* [CP] Check Pods Manifest.lock */,
 				8A4251A72005B490003A69AB /* Sources */,
 				8A4251A82005B490003A69AB /* Frameworks */,
 				8A4251A92005B490003A69AB /* Resources */,
+				0501588AAE5A14B2DD9EE92C /* [CP] Embed Pods Frameworks */,
+				65EEBF1D7F501AA08EA12B78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +322,164 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0501588AAE5A14B2DD9EE92C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYaGUITests/Pods-GYaGUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10C30397016F850900A6C51D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYaG/Pods-GYaG-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D3F1A69191832FB0AE05A99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYaGUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C3D5A5A559A9048AA73A485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYaGTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F2E3C554429CEF1A0F6999A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYaGTests/Pods-GYaGTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65EEBF1D7F501AA08EA12B78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYaGUITests/Pods-GYaGUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D09AB81826AF7C4C3EBBC7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GYaG/Pods-GYaG-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYaG/Pods-GYaG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D43F610A219B613E804C292 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYaGTests/Pods-GYaGTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC4511DC6BFACBD005183FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYaG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A4251882005B490003A69AB /* Sources */ = {
@@ -432,6 +653,7 @@
 		};
 		8A4251B52005B490003A69AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA5FB349E25A222255E37D8 /* Pods-GYaG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +669,7 @@
 		};
 		8A4251B62005B490003A69AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F16CD73F6A57F575102593A /* Pods-GYaG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +685,7 @@
 		};
 		8A4251B82005B490003A69AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA3A0C8836ACA31C7451DE2 /* Pods-GYaGTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +703,7 @@
 		};
 		8A4251B92005B490003A69AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6854A33C5B087B134CE9F0B1 /* Pods-GYaGTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +721,7 @@
 		};
 		8A4251BB2005B490003A69AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6781C07FE0987EE6693BD063 /* Pods-GYaGUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +738,7 @@
 		};
 		8A4251BC2005B490003A69AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB87525AA9D28DDD8C17A6B /* Pods-GYaGUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
