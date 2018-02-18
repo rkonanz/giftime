@@ -19,6 +19,7 @@
 		8A42519A2005B490003A69AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4251982005B490003A69AB /* LaunchScreen.storyboard */; };
 		8A4251A52005B490003A69AB /* GYaGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251A42005B490003A69AB /* GYaGTests.swift */; };
 		8A4251B02005B490003A69AB /* GYaGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251AF2005B490003A69AB /* GYaGUITests.swift */; };
+		8AEAC7A02030F282003F05B2 /* FBLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAC79F2030F282003F05B2 /* FBLogInViewController.swift */; };
 		8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */; };
 		8AF99FB4200A9EFF002CE3B0 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */; };
 		EDB0CE1C73369250BDCDB616 /* Pods_GYaGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC87E3182B72E852CF53AFC8 /* Pods_GYaGTests.framework */; };
@@ -62,6 +63,7 @@
 		8A4251AB2005B490003A69AB /* GYaGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYaGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4251AF2005B490003A69AB /* GYaGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYaGUITests.swift; sourceTree = "<group>"; };
 		8A4251B12005B490003A69AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AEAC79F2030F282003F05B2 /* FBLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLogInViewController.swift; sourceTree = "<group>"; };
 		8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		8CB87525AA9D28DDD8C17A6B /* Pods-GYaGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYaGUITests/Pods-GYaGUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				8A42518F2005B490003A69AB /* AppDelegate.swift */,
 				8A4251912005B490003A69AB /* ViewController.swift */,
 				8A4251932005B490003A69AB /* Main.storyboard */,
+				8AEAC79F2030F282003F05B2 /* FBLogInViewController.swift */,
 				8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */,
 				8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */,
 				8A4251962005B490003A69AB /* Assets.xcassets */,
@@ -486,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEAC7A02030F282003F05B2 /* FBLogInViewController.swift in Sources */,
 				8AF99FB4200A9EFF002CE3B0 /* HomepageViewController.swift in Sources */,
 				8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */,
 				8A4251922005B490003A69AB /* ViewController.swift in Sources */,

@@ -15,7 +15,7 @@ class HomepageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "http://www.wegotyouagift.com/validation/homepage.php")!
+        let url = URL(string: "http://www.wegotyouagift.com/validation/homepageFB.php")!
         let request = URLRequest(url: url)
         
         // modify the request as necessary, if necessary
@@ -26,12 +26,12 @@ class HomepageViewController: UIViewController {
                 return
             }
             
-            var firstName = ""
+            var fbName = ""
             
             do {
-                if let json = try JSONSerialization.jsonObject(with: data) as? [String: String], let fname = json["fname"]{
-                    print("fname = \(fname)")
-                    firstName = fname
+                if let json = try JSONSerialization.jsonObject(with: data) as? [String: String], let name = json["name"]{
+                    print("name = \(name)")
+                    fbName = name
                 }
             } catch let parseError {
                 print("parsing error: \(parseError)")
@@ -40,7 +40,7 @@ class HomepageViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-                self.homeTitle.text = ("Welcome, " + firstName as String?)! + "!"
+                self.homeTitle.text = fbName as String?!
             }
             
         }

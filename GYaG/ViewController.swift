@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // login for Facebook
     @IBAction func fbLogin(_ sender: Any) {
     
         let loginManager = LoginManager()
@@ -46,8 +47,27 @@ class ViewController: UIViewController {
                     if let error = error { print(error.localizedDescription) }
                     
                     if let userInfo = userInfo, let id = userInfo["id"], let name = userInfo["name"], let email = userInfo["email"] {
-                        self.permissionsLabel.text = "name: \(name)"
-                        self.accessTokenLabel.text = "email: \(email)"
+                        
+                        let request = NSMutableURLRequest(url: NSURL(string: "http://www.wegotyouagift.com/validation/fbRegister.php")! as URL)
+                        request.httpMethod = "POST"
+                        //need to add the other two variables in here and in php to register user successfully
+                        let postString = "a=\(email)&b=\(name)"
+                        
+                        request.httpBody = postString.data(using: String.Encoding.utf8)
+                        
+                        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                            data, response, error in
+                            
+                            if error != nil {
+                                print("error=\(error)")
+                                return
+                            }
+                            
+                        }
+                        task.resume()
+                        print("No errors")
+                        
+                        self.performSegue(withIdentifier: "loggedInToHome", sender: self)
                     }
                 }
             }
@@ -55,6 +75,7 @@ class ViewController: UIViewController {
         
     }
     
+    // gets user information from Facebook
     func getUserInfo(completion: @escaping (_ : [String: Any]?, _ : Error?) -> Void){
         
         let request = GraphRequest(graphPath: "me", parameters: ["fields": "id,name,email,picture"])
