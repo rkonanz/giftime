@@ -5,7 +5,6 @@
 //  Created by Roberto Konanz on 2/11/18.
 //  Copyright © 2018 Roberto Konanz. All rights reserved.
 //
-
 import UIKit
 import FBSDKLoginKit
 import FacebookCore
@@ -22,13 +21,12 @@ class FBLogInViewController: UIViewController{
         
         // add Facebook button to view
         let myLoginButton = UIButton(type: .custom)
-        myLoginButton.frame = CGRect(x: 110, y: 350, width: 150, height: 30)
+        myLoginButton.frame = CGRect(x: 100, y: 350, width: 180, height: 35)
         myLoginButton.setTitle("Log In with Facebook", for: .normal)
         myLoginButton.titleLabel?.font = UIFont(name: "Arial", size: 15)
-        //myLoginButton.backgroundColor = UIColor.white
-        //myLoginButton.center = view.center
-        //myLoginButton.layer.borderWidth = 2
-        //myLoginButton.layer.borderColor = [UIColor.white].CGColor
+        let red = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        myLoginButton.layer.borderColor = red.cgColor
+        myLoginButton.layer.borderWidth = 2
         
         // handle clicks on the button
         myLoginButton.addTarget(self, action:#selector(loginButtonClicked), for: .touchUpInside)
