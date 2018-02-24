@@ -22,10 +22,13 @@ class FBLogInViewController: UIViewController{
         
         // add Facebook button to view
         let myLoginButton = UIButton(type: .custom)
-        myLoginButton.backgroundColor = UIColor.blue
-        myLoginButton.frame = CGRect(x: 0, y: 0, width: 180, height: 40)
-        myLoginButton.center = view.center
+        myLoginButton.frame = CGRect(x: 110, y: 350, width: 150, height: 30)
         myLoginButton.setTitle("Log In with Facebook", for: .normal)
+        myLoginButton.titleLabel?.font = UIFont(name: "Arial", size: 15)
+        //myLoginButton.backgroundColor = UIColor.white
+        //myLoginButton.center = view.center
+        //myLoginButton.layer.borderWidth = 2
+        //myLoginButton.layer.borderColor = [UIColor.white].CGColor
         
         // handle clicks on the button
         myLoginButton.addTarget(self, action:#selector(loginButtonClicked), for: .touchUpInside)

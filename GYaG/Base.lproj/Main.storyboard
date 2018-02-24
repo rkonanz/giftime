@@ -45,25 +45,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user's email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fa-rn-jqz">
-                                <rect key="frame" x="134" y="281" width="107" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgColorHome" translatesAutoresizingMaskIntoConstraints="NO" id="LXr-ql-nc3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giftime-logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-MD-HTk">
+                                <rect key="frame" x="87" y="100" width="201" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AW3-dU-ext"/>
                     </view>
                     <connections>
-                        <outlet property="emailLabel" destination="7fa-rn-jqz" id="0kd-Tl-NuN"/>
                         <segue destination="WWa-Jv-lW3" kind="presentation" identifier="fbLoggedIn" id="l6M-eQ-a87"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xz9-mA-2xH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-724" y="73"/>
+            <point key="canvasLocation" x="-724" y="72.413793103448285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NzD-rd-Y0H">
@@ -327,6 +327,7 @@
         <image name="bgColorHome" width="207" height="368"/>
         <image name="giftIcon2" width="233" height="256"/>
         <image name="giftime" width="88" height="53"/>
+        <image name="giftime-logo-white" width="500" height="542"/>
         <image name="userIcon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>

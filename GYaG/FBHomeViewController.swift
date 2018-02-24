@@ -17,7 +17,6 @@ class FBHomeViewController: UIViewController {
     var dict : [String : AnyObject]!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         if let accessToken = FBSDKAccessToken.current(){
             getFBUserData()
