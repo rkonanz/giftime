@@ -54,6 +54,7 @@
                     </view>
                     <connections>
                         <outlet property="homeTitleLable" destination="mAT-EU-7mb" id="Pe2-YP-ZNc"/>
+                        <segue destination="OG7-NJ-4vL" kind="presentation" identifier="fbLoggedOut" id="rnS-nq-daL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwS-jQ-xfI" userLabel="First Responder" sceneMemberID="firstResponder"/>

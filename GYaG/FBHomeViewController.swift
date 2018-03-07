@@ -18,10 +18,22 @@ class FBHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        loginButton.center = CGPoint(x: 190, y: 500)
         
-        view.addSubview(loginButton)
+        // add Facebook button to view
+        let myLogOutButton = UIButton(type: .custom)
+        myLogOutButton.frame = CGRect(x: 60, y: 600, width: 250, height: 50)
+        myLogOutButton.setTitle("Log Out", for: .normal)
+        myLogOutButton.titleLabel?.font = UIFont(name: "Arial", size: 15)
+        myLogOutButton.setTitleColor(UIColor(red: 0.43, green: 0.84, blue: 0.8, alpha: 1), for: .normal)
+        let red = UIColor(red: 0.43, green: 0.84, blue: 0.8, alpha: 1)
+        myLogOutButton.layer.borderColor = red.cgColor
+        myLogOutButton.layer.borderWidth = 2
+        
+        // handle clicks on the button
+        myLogOutButton.addTarget(self, action:#selector(logOutButtonClicked), for: .touchUpInside)
+        
+        //adding it to view
+        view.addSubview(myLogOutButton)
         
         if let accessToken = FBSDKAccessToken.current(){
             getFBUserData()
@@ -31,6 +43,13 @@ class FBHomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //when log out button clicked
+    @objc func logOutButtonClicked() {
+        let loginManager = LoginManager()
+        loginManager.logOut()
+        self.performSegue(withIdentifier: "fbLoggedOut", sender: self)
     }
     
     //function is fetching the user data
