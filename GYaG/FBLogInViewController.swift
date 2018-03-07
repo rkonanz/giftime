@@ -16,12 +16,14 @@ class FBLogInViewController: UIViewController{
     @IBOutlet weak var emailLabel: UILabel!
     var dict : [String : AnyObject]!
     
+    //sets bg image to fb login button
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // add Facebook button to view
         let myLoginButton = UIButton(type: .custom)
-        myLoginButton.frame = CGRect(x: 100, y: 350, width: 180, height: 35)
+        myLoginButton.frame = CGRect(x: 60, y: 475, width: 250, height: 50)
         myLoginButton.setTitle("Log In with Facebook", for: .normal)
         myLoginButton.titleLabel?.font = UIFont(name: "Arial", size: 15)
         let red = UIColor(red: 1, green: 1, blue: 1, alpha: 1)

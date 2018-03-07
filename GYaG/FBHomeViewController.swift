@@ -18,6 +18,11 @@ class FBHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+        loginButton.center = CGPoint(x: 190, y: 500)
+        
+        view.addSubview(loginButton)
+        
         if let accessToken = FBSDKAccessToken.current(){
             getFBUserData()
         }
