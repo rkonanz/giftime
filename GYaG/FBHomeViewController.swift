@@ -47,12 +47,28 @@ class FBHomeViewController: UIViewController {
     
     //when log out button clicked
     @objc func logOutButtonClicked() {
-        let loginManager = LoginManager()
-        loginManager.logOut()
-        self.performSegue(withIdentifier: "fbLoggedOut", sender: self)
+        
+        // Create the AlertController
+        let actionSheetController = UIAlertController(title: "Warning", message: "Are you sure you want to Log Out?", preferredStyle: .actionSheet)
+        
+        // Create and add the Cancel action
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
+            // Just dismiss the action sheet
+        }
+        actionSheetController.addAction(cancelAction)
+        
+        // Create and add first option action
+        let logOutAction = UIAlertAction(title: "Yes, Log me Out.", style: .default) { action -> Void in
+            self.performSegue(withIdentifier: "fbLoggedOut", sender: self)
+        }
+        actionSheetController.addAction(logOutAction)
+        
+        // Present Alert
+        self.present(actionSheetController, animated: true, completion: nil)
+        
     }
     
-    //function is fetching the user data
+    // Function to fetch Facebook User data
     func getFBUserData(){
         if((FBSDKAccessToken.current()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
