@@ -21,6 +21,7 @@
 		8A4251B02005B490003A69AB /* GYaGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4251AF2005B490003A69AB /* GYaGUITests.swift */; };
 		8A710A952041CCC800170EA7 /* FBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A710A942041CCC800170EA7 /* FBHomeViewController.swift */; };
 		8AEAC7A02030F282003F05B2 /* FBLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAC79F2030F282003F05B2 /* FBLogInViewController.swift */; };
+		8AEECE602061D6FA008BCEC4 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEECE5F2061D6FA008BCEC4 /* AccountSettingsViewController.swift */; };
 		8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */; };
 		8AF99FB4200A9EFF002CE3B0 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */; };
 		EDB0CE1C73369250BDCDB616 /* Pods_GYaGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC87E3182B72E852CF53AFC8 /* Pods_GYaGTests.framework */; };
@@ -66,6 +67,7 @@
 		8A4251B12005B490003A69AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A710A942041CCC800170EA7 /* FBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeViewController.swift; sourceTree = "<group>"; };
 		8AEAC79F2030F282003F05B2 /* FBLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLogInViewController.swift; sourceTree = "<group>"; };
+		8AEECE5F2061D6FA008BCEC4 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
 		8AF99FB1200936BA002CE3B0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		8CB87525AA9D28DDD8C17A6B /* Pods-GYaGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYaGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYaGUITests/Pods-GYaGUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				8A42518F2005B490003A69AB /* AppDelegate.swift */,
 				8A4251912005B490003A69AB /* ViewController.swift */,
 				8A4251932005B490003A69AB /* Main.storyboard */,
+				8AEECE5F2061D6FA008BCEC4 /* AccountSettingsViewController.swift */,
 				8A710A942041CCC800170EA7 /* FBHomeViewController.swift */,
 				8AEAC79F2030F282003F05B2 /* FBLogInViewController.swift */,
 				8AF99FB3200A9EFF002CE3B0 /* HomepageViewController.swift */,
@@ -497,6 +500,7 @@
 				8AF99FB2200936BA002CE3B0 /* RegisterViewController.swift in Sources */,
 				8A710A952041CCC800170EA7 /* FBHomeViewController.swift in Sources */,
 				8A4251922005B490003A69AB /* ViewController.swift in Sources */,
+				8AEECE602061D6FA008BCEC4 /* AccountSettingsViewController.swift in Sources */,
 				8A4251902005B490003A69AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

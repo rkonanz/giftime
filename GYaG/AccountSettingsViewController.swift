@@ -1,8 +1,8 @@
 //
-//  FBHomeViewController.swift
+//  AccountSettingsViewController.swift
 //  GYaG
 //
-//  Created by Roberto Konanz on 2/24/18.
+//  Created by Roberto Konanz on 3/20/18.
 //  Copyright © 2018 Roberto Konanz. All rights reserved.
 //
 
@@ -10,14 +10,12 @@ import UIKit
 import FBSDKLoginKit
 import FacebookLogin
 
-class FBHomeViewController: UIViewController {
+class AccountSettingsViewController: UIViewController {
 
-    
-    @IBOutlet weak var homeTitleLable: UILabel!
     var dict : [String : AnyObject]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         // add Facebook button to view
         let myLogOutButton = UIButton(type: .custom)
@@ -33,16 +31,12 @@ class FBHomeViewController: UIViewController {
         myLogOutButton.addTarget(self, action:#selector(logOutButtonClicked), for: .touchUpInside)
         
         //adding it to view
-        //view.addSubview(myLogOutButton)
+        view.addSubview(myLogOutButton)
         
         if let accessToken = FBSDKAccessToken.current(){
             getFBUserData()
         }
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //when log out button clicked
@@ -59,7 +53,7 @@ class FBHomeViewController: UIViewController {
         
         // Create and add first option action
         let logOutAction = UIAlertAction(title: "Yes, Log me Out.", style: .default) { action -> Void in
-            self.performSegue(withIdentifier: "fbLoggedOut", sender: self)
+            self.performSegue(withIdentifier: "accountLoggedOut", sender: self)
         }
         actionSheetController.addAction(logOutAction)
         
@@ -75,13 +69,26 @@ class FBHomeViewController: UIViewController {
                 if (error == nil){
                     // adds the result to the dictionary declared above
                     self.dict = result as! [String : AnyObject]
-                    
-                    // adds the name of user to homepage title
-                    self.homeTitleLable.text = "Welcome, " + (self.dict["name"] as! String)
-                    
                 }
             })
         }
     }
+    
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
