@@ -25,9 +25,9 @@ class AccountSettingsViewController: UIViewController {
         myLogOutButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         let red = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         myLogOutButton.layer.cornerRadius = 15
-        myLogOutButton.layer.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.25).cgColor
+        myLogOutButton.layer.backgroundColor = UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 0.15).cgColor
         myLogOutButton.layer.borderColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.25).cgColor
-        myLogOutButton.layer.borderWidth = 2
+        myLogOutButton.layer.borderWidth = 1
         
         // handle clicks on the button
         myLogOutButton.addTarget(self, action:#selector(logOutButtonClicked), for: .touchUpInside)
@@ -54,7 +54,7 @@ class AccountSettingsViewController: UIViewController {
         actionSheetController.addAction(cancelAction)
         
         // Create and add first option action
-        let logOutAction = UIAlertAction(title: "Yes, Log me Out.", style: .default) { action -> Void in
+        let logOutAction = UIAlertAction(title: "Yes, Log Out", style: .default) { action -> Void in
             self.performSegue(withIdentifier: "accountLoggedOut", sender: self)
         }
         actionSheetController.addAction(logOutAction)

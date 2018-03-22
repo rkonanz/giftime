@@ -13,7 +13,9 @@ class PopUpCodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.layer.cornerRadius = 5;
+        view.layer.masksToBounds = true;
+
     }
     
     @IBAction func closePopUp(_ sender: Any) {
