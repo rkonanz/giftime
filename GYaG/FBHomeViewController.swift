@@ -89,7 +89,7 @@ class FBHomeViewController: UIViewController {
                     self.dict = result as! [String : AnyObject]
                     
                     // adds the name of user to homepage title
-                    self.homeTitleLable.text = "Welcome, " + (self.dict["name"] as! String)
+                    //self.homeTitleLable.text = "Welcome, " + (self.dict["name"] as! String)
                     
                 }
             })

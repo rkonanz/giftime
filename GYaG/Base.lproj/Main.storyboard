@@ -60,36 +60,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top-bar" translatesAutoresizingMaskIntoConstraints="NO" id="DNM-1s-I0v">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secondary-topbar" translatesAutoresizingMaskIntoConstraints="NO" id="DNM-1s-I0v">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAT-EU-7mb">
-                                <rect key="frame" x="16" y="186" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giftIcon2" translatesAutoresizingMaskIntoConstraints="NO" id="WGT-r7-XAw">
                                 <rect key="frame" x="82" y="259" width="211" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have a new gift! Click to unlock!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqn-ec-b5c">
-                                <rect key="frame" x="50" y="506" width="275" height="86"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tienes un nuevo regalo! Haz click!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqn-ec-b5c">
+                                <rect key="frame" x="56" y="507" width="263" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-HT-iGG">
-                                <rect key="frame" x="50" y="215" width="287" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="x"/>
-                                <connections>
-                                    <action selector="viewCode:" destination="WWa-Jv-lW3" eventType="touchUpInside" id="T8z-7L-iht"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white-hamburger" translatesAutoresizingMaskIntoConstraints="NO" id="PX4-VL-1I0">
                                 <rect key="frame" x="27" y="95" width="34" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,6 +86,25 @@
                                     <segue destination="ncC-mE-pFz" kind="presentation" id="2Ho-xh-C2a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-HT-iGG">
+                                <rect key="frame" x="44" y="234" width="287" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="viewCode:" destination="WWa-Jv-lW3" eventType="touchUpInside" id="T8z-7L-iht"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-blanco-nobg" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-cv-8Fl">
+                                <rect key="frame" x="122" y="79" width="142" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mi Regalo:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAT-EU-7mb">
+                                <rect key="frame" x="135" y="197" width="107" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cz2-ez-BlJ"/>
@@ -423,13 +427,13 @@
         <image name="giftime" width="88" height="53"/>
         <image name="logo-blanco-nobg" width="2105" height="589"/>
         <image name="secondary-topbar" width="1905" height="514"/>
-        <image name="top-bar" width="952" height="442"/>
         <image name="userIcon" width="64" height="64"/>
         <image name="white-hamburger" width="304" height="241"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="2Ho-xh-C2a"/>
         <segue reference="5mP-G0-jNa"/>
-        <segue reference="fyB-4D-Rs3"/>
+        <segue reference="rnS-nq-daL"/>
         <segue reference="iiP-ma-ySZ"/>
     </inferredMetricsTieBreakers>
 </document>
