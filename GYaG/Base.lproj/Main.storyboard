@@ -82,7 +82,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.2459562059859155" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="0.84757372359154937" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vXw-yA-unI"/>
                     </view>
                 </viewController>
@@ -123,7 +123,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-HT-iGG">
                                 <rect key="frame" x="44" y="234" width="287" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="x"/>
                                 <connections>
                                     <action selector="viewCode:" destination="WWa-Jv-lW3" eventType="touchUpInside" id="T8z-7L-iht"/>
                                     <segue destination="SK5-jv-3DX" kind="presentation" id="T9A-n1-Fq4"/>
@@ -170,7 +169,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-blanco-nobg" translatesAutoresizingMaskIntoConstraints="NO" id="kEs-UA-UEe">
-                                <rect key="frame" x="30" y="294" width="315" height="91"/>
+                                <rect key="frame" x="30" y="229" width="315" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -455,9 +454,8 @@
         <image name="white-hamburger" width="304" height="241"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Ho-xh-C2a"/>
         <segue reference="5mP-G0-jNa"/>
         <segue reference="rnS-nq-daL"/>
-        <segue reference="iiP-ma-ySZ"/>
+        <segue reference="l6M-eQ-a87"/>
     </inferredMetricsTieBreakers>
 </document>
