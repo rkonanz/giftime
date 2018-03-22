@@ -19,9 +19,9 @@ class AccountSettingsViewController: UIViewController {
         
         // add Facebook button to view
         let myLogOutButton = UIButton(type: .custom)
-        myLogOutButton.frame = CGRect(x: 60, y: 200, width: 250, height: 50)
+        myLogOutButton.frame = CGRect(x: 35, y: 185, width: 300, height: 50)
         myLogOutButton.setTitle("Log Out", for: .normal)
-        myLogOutButton.titleLabel?.font = UIFont(name: "Arial", size: 17)
+        myLogOutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         myLogOutButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         let red = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         myLogOutButton.layer.cornerRadius = 15
@@ -32,9 +32,10 @@ class AccountSettingsViewController: UIViewController {
         // handle clicks on the button
         myLogOutButton.addTarget(self, action:#selector(logOutButtonClicked), for: .touchUpInside)
         
-        //adding it to view
+        // adding it to view
         view.addSubview(myLogOutButton)
         
+        // gets the Facebook User data
         if let accessToken = FBSDKAccessToken.current(){
             getFBUserData()
         }
