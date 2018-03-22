@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bgColorHome.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "top-bar.png",
       "scale" : "2x"
     },
     {

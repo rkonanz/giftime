@@ -14,6 +14,8 @@ class FBHomeViewController: UIViewController {
 
     
     @IBOutlet weak var homeTitleLable: UILabel!
+    @IBOutlet var viewCodeView: UIView!
+    
     var dict : [String : AnyObject]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,16 @@ class FBHomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func animateIn() {
+        self.view.addSubview(viewCodeView)
+        viewCodeView.center = self.view.center
+    }
+    
+    @IBAction func viewCode(_ sender: Any) {
+        animateIn()
+    }
+    
     
     //when log out button clicked
     @objc func logOutButtonClicked() {

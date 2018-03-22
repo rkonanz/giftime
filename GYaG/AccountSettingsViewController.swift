@@ -19,7 +19,7 @@ class AccountSettingsViewController: UIViewController {
         
         // add Facebook button to view
         let myLogOutButton = UIButton(type: .custom)
-        myLogOutButton.frame = CGRect(x: 60, y: 600, width: 250, height: 50)
+        myLogOutButton.frame = CGRect(x: 60, y: 200, width: 250, height: 50)
         myLogOutButton.setTitle("Log Out", for: .normal)
         myLogOutButton.titleLabel?.font = UIFont(name: "Arial", size: 15)
         myLogOutButton.setTitleColor(UIColor(red: 0.43, green: 0.84, blue: 0.8, alpha: 1), for: .normal)
