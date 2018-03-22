@@ -21,10 +21,12 @@ class AccountSettingsViewController: UIViewController {
         let myLogOutButton = UIButton(type: .custom)
         myLogOutButton.frame = CGRect(x: 60, y: 200, width: 250, height: 50)
         myLogOutButton.setTitle("Log Out", for: .normal)
-        myLogOutButton.titleLabel?.font = UIFont(name: "Arial", size: 15)
-        myLogOutButton.setTitleColor(UIColor(red: 0.43, green: 0.84, blue: 0.8, alpha: 1), for: .normal)
-        let red = UIColor(red: 0.43, green: 0.84, blue: 0.8, alpha: 1)
-        myLogOutButton.layer.borderColor = red.cgColor
+        myLogOutButton.titleLabel?.font = UIFont(name: "Arial", size: 17)
+        myLogOutButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        let red = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        myLogOutButton.layer.cornerRadius = 15
+        myLogOutButton.layer.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.25).cgColor
+        myLogOutButton.layer.borderColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.25).cgColor
         myLogOutButton.layer.borderWidth = 2
         
         // handle clicks on the button
