@@ -164,12 +164,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgProColor" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXr-ql-nc3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXr-ql-nc3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-blanco-nobg" translatesAutoresizingMaskIntoConstraints="NO" id="kEs-UA-UEe">
-                                <rect key="frame" x="30" y="283" width="315" height="91"/>
+                                <rect key="frame" x="46" y="248" width="283" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -443,8 +443,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fondo" width="1243" height="2208"/>
         <image name="bgColorHome" width="414" height="736"/>
-        <image name="bgProColor" width="2587" height="4600"/>
         <image name="giftIcon2" width="233" height="256"/>
         <image name="giftime" width="88" height="53"/>
         <image name="just-logo-white" width="318" height="324"/>
