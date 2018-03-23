@@ -83,6 +83,30 @@ class FBHomeViewController: UIViewController {
                     // adds the result to the dictionary declared above
                     self.dict = result as! [String : AnyObject]
                     
+                    // gets the info as strings
+                    let email = self.dict["email"] as! String
+                    let name = self.dict["name"] as! String
+                    
+                    let request = NSMutableURLRequest(url: NSURL(string: "http://www.wegotyouagift.com/validation/fbRegisterToDB.php")! as URL)
+                    request.httpMethod = "POST"
+                    // sends email and name to PHP
+                    let postString = "a=\(email)&b=\(name)"
+                    
+                    request.httpBody = postString.data(using: String.Encoding.utf8)
+                    
+                    let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                        data, response, error in
+                        
+                        if error != nil {
+                            print("error=\(error)")
+                            return
+                        }
+                        
+                    }
+                    task.resume()
+                    print("No errors")
+                    
+                    
                     // adds the name of user to homepage title
                     //self.homeTitleLable.text = "Welcome, " + (self.dict["name"] as! String)
                     

@@ -169,7 +169,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-blanco-nobg" translatesAutoresizingMaskIntoConstraints="NO" id="kEs-UA-UEe">
-                                <rect key="frame" x="30" y="229" width="315" height="91"/>
+                                <rect key="frame" x="30" y="283" width="315" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
