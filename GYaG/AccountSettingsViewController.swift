@@ -22,12 +22,12 @@ class AccountSettingsViewController: UIViewController {
         myLogOutButton.frame = CGRect(x: 35, y: 185, width: 300, height: 50)
         myLogOutButton.setTitle("Log Out", for: .normal)
         myLogOutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        myLogOutButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        myLogOutButton.setTitleColor(UIColor(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
         let red = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         myLogOutButton.layer.cornerRadius = 15
-        myLogOutButton.layer.backgroundColor = UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 0.15).cgColor
-        myLogOutButton.layer.borderColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.25).cgColor
-        myLogOutButton.layer.borderWidth = 1
+        myLogOutButton.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        myLogOutButton.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7).cgColor
+        myLogOutButton.layer.borderWidth = 2
         
         // handle clicks on the button
         myLogOutButton.addTarget(self, action:#selector(logOutButtonClicked), for: .touchUpInside)
