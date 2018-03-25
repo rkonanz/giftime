@@ -69,7 +69,7 @@
                                 <rect key="frame" x="32" y="179" width="310" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="just-logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-h4-kyS">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-h4-kyS">
                                         <rect key="frame" x="21" y="0.0" width="268" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -90,6 +90,9 @@
                         <color key="backgroundColor" white="1" alpha="0.84757372359154937" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vXw-yA-unI"/>
                     </view>
+                    <connections>
+                        <outlet property="giftImage" destination="wdv-h4-kyS" id="OTD-em-wJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHb-xg-l02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,7 +455,6 @@
         <image name="bgColorHome" width="414" height="736"/>
         <image name="giftIcon2" width="233" height="256"/>
         <image name="giftime" width="88" height="53"/>
-        <image name="just-logo-white" width="318" height="324"/>
         <image name="logo-blanco-nobg" width="2105" height="589"/>
         <image name="secondary-topbar" width="1905" height="514"/>
         <image name="userIcon" width="64" height="64"/>
